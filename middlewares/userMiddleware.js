@@ -13,11 +13,11 @@ module.exports = function (opts) {
                 language_code: ctx.from && ctx.from.language_code
             }
         }
-    }, opts)
+    }, opts);
 
 
     return async (ctx, next) => {
-        const userInfo = opts.getUserInfo(ctx)
+        const userInfo = opts.getUserInfo(ctx);
         const { userId } = userInfo;
         delete userInfo.userId;
 
@@ -29,7 +29,7 @@ module.exports = function (opts) {
             user = await models.User.create({
                 id: userId,
                 ...userInfo,
-                selected_language_code: userInfo.language_code.substring(0,2),
+                selected_language_code: userInfo.language_code.substring(0, 2),
             })
         } else if (!isIdentical(userInfo, user)) {
             await user.update({
@@ -43,7 +43,7 @@ module.exports = function (opts) {
             set: function (newUser) {
                 user = Object.assign({}, newUser)
             }
-        })
+        });
 
         userInfo.selected_language_code = user.selected_language_code;
 
@@ -52,11 +52,8 @@ module.exports = function (opts) {
         if (!isIdentical(userInfo, user)) {
             await user.save();
         }
-
-        return;
-
     }
-}
+};
 
 const isIdentical = (obj1, obj2) => {
     let result = true;
@@ -69,4 +66,4 @@ const isIdentical = (obj1, obj2) => {
     }
 
     return result;
-}
+};

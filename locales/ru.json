@@ -1,5 +1,19 @@
 {
-  "description": "Это описание.\nВыберете, пожалуйста, Ваш язык",
-  "language_saved": "Язык сохранен!\nNow you can use yhe bot!"
+  "not_found": "404 ru",
 
+  "description": "Это описание.\nВыберете, пожалуйста, Ваш язык",
+  "language_saved": "Язык сохранен!\nNow you can use yhe bot!",
+  "main_page": "Сделайте свой выбор",
+
+  "button_schedule": "Расписание",
+  "button_notification": "Уведомления",
+  "button_settings": "Настройки",
+  "button_language": "Сменить язык",
+  "button_timer": "Сменить таймер",
+  "button_home": "Домой",
+
+  "current_settings": "Твои текущие настройки\n\nЯзык: ${language}\nУведомления: ${timer}\n\nЧто желаешь настроить?",
+  "changing_language": "Выберете, пожалуйста, Ваш язык",
+
+  "":""
 }

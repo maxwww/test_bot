@@ -1,24 +1,28 @@
 module.exports = {
-    "development": {
-        "username": "root",
-        "password": null,
-        "database": "database_development",
-        "host": "127.0.0.1",
-        "dialect": "sqlite",
-        "storage": "./db/database.sqlite"
+    languages: {
+        uk: {
+            emoji: '🇺🇦',
+            lang: 'Українська мова',
+        },
+        ru: {
+            emoji: '🇷🇺',
+            lang: 'Русский язык',
+        },
+        en: {
+            emoji: '🇬🇧',
+            lang: 'English',
+        }
     },
-    "test": {
-        "username": "root",
-        "password": null,
-        "database": "database_test",
-        "host": "127.0.0.1",
-        "dialect": "mysql"
+
+    mainMenu: {
+        button_schedule: '🚉',
+        button_notification: '🔔',
+        button_settings: '⚙',
     },
-    "production": {
-        "username": "root",
-        "password": null,
-        "database": "database_production",
-        "host": "127.0.0.1",
-        "dialect": "mysql"
+
+    settingMenu: {
+        button_language: '🌐',
+        button_timer: '⏰',
+        button_home: '⬅️'
     }
-}
+};

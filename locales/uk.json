@@ -1,4 +1,19 @@
 {
+  "not_found": "404 uk",
+
   "description": "Це опис :)\nВибeріть вашу мову",
-  "language_saved": "Ваш вибір збережено!\nNow you can use yhe bot!"
+  "language_saved": "Ваш вибір збережено!\nNow you can use yhe bot!",
+  "main_page": "Зробіть ваш вибір",
+
+  "button_schedule": "Розглад Руху",
+  "button_notification": "Сповіщення",
+  "button_settings": "Налаштування",
+  "button_language": "Змінити мову",
+  "button_timer": "Змінити таймер",
+  "button_home": "Головна",
+
+  "current_settings": "Твої поточні налаштування:\n\nМова спілкування: ${language}\nСповіщення: ${timer}\n\nЩо бажаєш налаштувати?",
+  "changing_language": "Вибeріть вашу мову",
+
+  "":""
 }

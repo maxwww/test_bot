@@ -1,4 +1,19 @@
 {
+  "not_found": "404 en",
+
   "description": "It is a description\nPlease select your language!",
-  "language_saved": "Language has saved successfully\nNow you can use yhe bot!"
+  "language_saved": "Language has saved successfully\nNow you can use yhe bot!",
+  "main_page": "Please make your choice!",
+
+  "button_schedule": "Tram schedule",
+  "button_notification": "Notification",
+  "button_settings": "Settings",
+  "button_language": "Change language",
+  "button_timer": "Change timer",
+  "button_home": "Home",
+
+  "current_settings": "Your settings\n\nLanguage: ${language}\nNotifications: ${timer}\n\nWhat would you like to set up?",
+  "changing_language": "Please select your language!",
+
+  "":""
 }
