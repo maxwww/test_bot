@@ -27,6 +27,8 @@
   "changing_timer": "Please select time",
 
   "schedule": "Do you want to find a bus stop by a bus number or a city black?",
+  "byBus": "By bus",
+  "byStreet": "By street",
 
   "minutes": "${min} min",
 

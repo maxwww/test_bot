@@ -76,7 +76,7 @@ module.exports = {
             type: does,
             keys: [
                 { title: { text: 'byBus', emoji: buttons.byBus }, action: 'find:byBus' },
-                { title: { text: 'byBlack', emoji: buttons.byBlack }, action: 'find:byBlack' },
+                { title: { text: 'byStreet', emoji: buttons.byStreet }, action: 'find:byStreet' },
             ],
             columns: 2
         }

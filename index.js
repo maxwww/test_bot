@@ -4,13 +4,14 @@ global.goes = Symbol.for('goes');
 const userMiddleware = require('./middlewares/userMiddleware');
 const routes = require('./config/routes');
 const Telegraf = require('telegraf');
-const Router = require('telegraf/router')
+const Router = require('telegraf/router');
 const I18n = require('telegraf-i18n');
 const Extra = require('telegraf/extra');
 const Markup = require('telegraf/markup');
 const buttons = require('./constants/buttons');
 const path = require('path');
 const fs = require('fs');
+const models = require('./models');
 
 const langs = [];
 
@@ -68,6 +69,37 @@ callbackHandler.on('timer', async (ctx) => {
     await ctx.answerCbQuery(i18n.t(lang, 'timer_saved'));
     await ctx.deleteMessage();
     await renderPage(ctx, routes.timer.parent, i18n.t(lang, routes[routes.timer.parent].message, ctx.user.dataValues), lang);
+});
+
+callbackHandler.on('find', async (ctx) => {
+    const lang = ctx.user.selected_language_code;
+
+    // let streets = await models.Street.findAll();
+
+    // let stops = await models.Stop.findAll({include: ['trolleybuses']});
+    //
+    // for (let stop of stops) {
+    //     console.log("<<<<");
+    //     console.log(stop.id);
+    //     for (let trolleybus of stop.trolleybuses) {
+    //         console.log(trolleybus.id);
+    //     }
+    // }
+
+    let trolleybuses = await models.Trolleybus.findAll({include: ['stops']});
+
+    for (let trolleybus of trolleybuses) {
+        console.log("<<<<");
+        console.log(trolleybus.id);
+        for (let stop of trolleybus.stops) {
+            console.log(stop.id);
+        }
+    }
+
+    //
+    // await ctx.answerCbQuery(i18n.t(lang, 'timer_saved'));
+    // await ctx.deleteMessage();
+    // await renderPage(ctx, routes.home, i18n.t(lang, routes.home.message, ctx.user.dataValues), lang);
 });
 
 callbackHandler.otherwise((ctx) => ctx.reply('🌯'));

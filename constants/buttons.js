@@ -12,7 +12,7 @@ module.exports = {
     ruLang: '🇷🇺️',
     enLang: '🇬🇧️',
     byBus: '🚎',
-    byBlack: '🌆',
+    byStreet: '🛣️',
     // byBlack: '🌆',
     // byBlack: '🏙',
 };
