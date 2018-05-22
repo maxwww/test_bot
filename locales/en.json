@@ -1,9 +1,17 @@
 {
-  "not_found": "404 en",
+  "notFound": "404 en",
 
-  "description": "It is a description\nPlease select your language!",
+  "welcome": "It is welcome message!",
+  "description": "It is home page description",
   "language_saved": "Language has saved successfully\nNow you can use yhe bot!",
+  "timer_saved": "Your timer has saved successfully\nNow you can use yhe bot!",
   "main_page": "Please make your choice!",
+
+  "uk_lang": "Українська мова",
+  "ru_lang": "Русский язык",
+  "en_lang": "English",
+
+  "canceled": "Canceled",
 
   "button_schedule": "Tram schedule",
   "button_notification": "Notification",
@@ -11,9 +19,16 @@
   "button_language": "Change language",
   "button_timer": "Change timer",
   "button_home": "Home",
+  "button_back": "Back",
+  "button_cancel": "Cancel",
 
-  "current_settings": "Your settings\n\nLanguage: ${language}\nNotifications: ${timer}\n\nWhat would you like to set up?",
+  "current_settings": "Your settings\n\nLanguage: English\nNotifications: ${timer} min\n\nWhat would you like to set up?",
   "changing_language": "Please select your language!",
+  "changing_timer": "Please select time",
+
+  "schedule": "Do you want to find a bus stop by a bus number or a city black?",
+
+  "minutes": "${min} min",
 
   "":""
 }

@@ -27,6 +27,12 @@ module.exports = {
             selected_language_code: {
                 type: Sequelize.STRING,
             },
+            timer: {
+                type: Sequelize.TINYINT,
+            },
+            state: {
+                type: Sequelize.STRING,
+            },
             createdAt: {
                 allowNull: false,
                 type: Sequelize.DATE

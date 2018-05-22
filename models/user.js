@@ -25,6 +25,12 @@ module.exports = (sequelize, DataTypes) => {
         },
         selected_language_code: {
             type: DataTypes.STRING,
+        },
+        timer: {
+            type: DataTypes.TINYINT,
+        },
+        state: {
+            type: DataTypes.STRING,
         }
     }, {});
 

@@ -29,7 +29,8 @@ module.exports = function (opts) {
             user = await models.User.create({
                 id: userId,
                 ...userInfo,
-                selected_language_code: userInfo.language_code.substring(0, 2),
+                selected_language_code: userInfo.language_code ? userInfo.language_code.substring(0, 2) : 'ru',
+                timer: opts.defaultTimer ? opts.defaultTimer : 5,
             })
         } else if (!isIdentical(userInfo, user)) {
             await user.update({
@@ -46,6 +47,8 @@ module.exports = function (opts) {
         });
 
         userInfo.selected_language_code = user.selected_language_code;
+        userInfo.timer = user.timer;
+        userInfo.state = user.state;
 
         await next(ctx);
 

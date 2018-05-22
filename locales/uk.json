@@ -1,9 +1,17 @@
 {
-  "not_found": "404 uk",
+  "notFound": "404 uk",
 
-  "description": "Це опис :)\nВибeріть вашу мову",
+  "welcome": "Це опис :)\nВибeріть вашу мову",
+  "description": "Це опис :)",
   "language_saved": "Ваш вибір збережено!\nNow you can use yhe bot!",
+  "timer_saved": "Ваш таймер збережено\nNow you can use yhe bot!",
+
+  "uk_lang": "Українська мова",
+  "ru_lang": "Русский язык",
+  "en_lang": "English",
+
   "main_page": "Зробіть ваш вибір",
+  "canceled": "Дію скасовано",
 
   "button_schedule": "Розглад Руху",
   "button_notification": "Сповіщення",
@@ -11,9 +19,15 @@
   "button_language": "Змінити мову",
   "button_timer": "Змінити таймер",
   "button_home": "Головна",
+  "button_back": "Назад",
+  "button_cancel": "Відмінити",
 
-  "current_settings": "Твої поточні налаштування:\n\nМова спілкування: ${language}\nСповіщення: ${timer}\n\nЩо бажаєш налаштувати?",
+  "_current_settings": "Що бажаєш налаштувати?",
+  "current_settings": "Твої поточні налаштування:\n\nМова спілкування: Українська\nСповіщення: ${timer} хв\n\nЩо бажаєш налаштувати?",
   "changing_language": "Вибeріть вашу мову",
+  "changing_timer": "Виберіть за скільки хвилин повдомляти вас про прибуття транспорту",
+
+  "minutes": "${min} хв",
 
   "":""
 }

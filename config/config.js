@@ -1,28 +1,9 @@
-module.exports = {
-    languages: {
-        uk: {
-            emoji: '🇺🇦',
-            lang: 'Українська мова',
-        },
-        ru: {
-            emoji: '🇷🇺',
-            lang: 'Русский язык',
-        },
-        en: {
-            emoji: '🇬🇧',
-            lang: 'English',
-        }
-    },
+if (process.env.NODE_ENV === 'development') {
+    module.exports = require('./development');
+} else if (process.env.NODE_ENV === 'test') {
+    module.exports = require('./test');
+} else {
+    module.exports = require('./prod');
+}
 
-    mainMenu: {
-        button_schedule: '🚉',
-        button_notification: '🔔',
-        button_settings: '⚙',
-    },
 
-    settingMenu: {
-        button_language: '🌐',
-        button_timer: '⏰',
-        button_home: '⬅️'
-    }
-};

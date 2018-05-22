@@ -1,9 +1,17 @@
 {
-  "not_found": "404 ru",
+  "notFound": "404 ru",
 
-  "description": "Это описание.\nВыберете, пожалуйста, Ваш язык",
+  "welcome": "Это описание.\nВыберете, пожалуйста, Ваш язык",
+  "description": "Это описание.",
   "language_saved": "Язык сохранен!\nNow you can use yhe bot!",
+  "timer_saved": "Ваш таймер сохранен\nNow you can use yhe bot!",
   "main_page": "Сделайте свой выбор",
+
+  "uk_lang": "Українська мова",
+  "ru_lang": "Русский язык",
+  "en_lang": "English",
+
+  "canceled": "Действие отменено",
 
   "button_schedule": "Расписание",
   "button_notification": "Уведомления",
@@ -11,9 +19,14 @@
   "button_language": "Сменить язык",
   "button_timer": "Сменить таймер",
   "button_home": "Домой",
+  "button_back": "Назад",
+  "button_cancel": "Отмена",
 
-  "current_settings": "Твои текущие настройки\n\nЯзык: ${language}\nУведомления: ${timer}\n\nЧто желаешь настроить?",
+  "_current_settings": "Что желаешь настроить?",
+  "current_settings": "Твои текущие настройки\n\nЯзык: Русский\nУведомления: ${timer} мин\n\nЧто желаешь настроить?",
   "changing_language": "Выберете, пожалуйста, Ваш язык",
+  "changing_timer": "Выберете за сколько минут вас уведомлять",
+  "minutes": "${min} мин",
 
   "":""
 }
