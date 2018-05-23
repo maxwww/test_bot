@@ -26,9 +26,13 @@
   "changing_language": "Please select your language!",
   "changing_timer": "Please select time",
 
-  "schedule": "Do you want to find a bus stop by a bus number or a city black?",
-  "byBus": "By bus",
-  "byStreet": "By street",
+  "schedule": "Do you want to find a bus stop by a bus number or a street?",
+  "showAllBuses": "By bus",
+  "selectBus": "Please select a Bus",
+  "showAllStreets": "By street",
+  "selectStreet": "Please select a street where you want to find a bus stop",
+  "selectStop": "Please select a bus stop from the list",
+  "actionForStop": "What would you like to see?",
 
   "minutes": "${min} min",
 

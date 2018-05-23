@@ -75,8 +75,8 @@ module.exports = {
         keyboard: {
             type: does,
             keys: [
-                { title: { text: 'byBus', emoji: buttons.byBus }, action: 'find:byBus' },
-                { title: { text: 'byStreet', emoji: buttons.byStreet }, action: 'find:byStreet' },
+                { title: { text: 'showAllStreets', emoji: buttons.street }, action: 'showAllStreets' },
+                { title: { text: 'showAllBuses', emoji: buttons.bus }, action: 'showAllBuses' },
             ],
             columns: 2
         }

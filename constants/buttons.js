@@ -11,8 +11,8 @@ module.exports = {
     ukLang: '🇺🇦',
     ruLang: '🇷🇺️',
     enLang: '🇬🇧️',
-    byBus: '🚎',
-    byStreet: '🛣️',
+    bus: '🚎',
+    street: '🛣️',
     // byBlack: '🌆',
     // byBlack: '🏙',
 };

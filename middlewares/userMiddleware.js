@@ -50,7 +50,13 @@ module.exports = function (opts) {
         userInfo.timer = user.timer;
         userInfo.state = user.state;
 
-        await next(ctx);
+        try {
+            await next(ctx);
+        } catch (e) {
+            console.log(e);
+            await ctx.reply("Пожалуйста, помедленее, я записываю!");
+        }
+
 
         if (!isIdentical(userInfo, user)) {
             await user.save();
